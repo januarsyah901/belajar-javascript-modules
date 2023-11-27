@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS MODULES</title>
+    <script type="module" src="modules/say.js"></script>
 </head>
 <body>
-    
+    <script type="module">
+        import { sayHello, sayGoodBye, hello } from "./modules/say.js";
+        sayHello("januar");
+        console.info(hello);
+    </script>
 </body>
 </html>
